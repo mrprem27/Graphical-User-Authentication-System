@@ -1,0 +1,42 @@
+.options-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  color: white;
+  text-shadow: 1.2px 1.2px 5px black;
+  padding: 10px;
+  top: 0;
+  overflow-y: scroll;
+  z-index: 3;
+  background-color: rgba(50, 68, 80, 0.507);
+}
+.options-top > div,
+.options-bottom > div > div {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.options-container img {
+  width: 9.5vw;
+  background-color: black;
+  margin: 8px;
+  height: 9.5vw;
+  object-fit: cover;
+  display: block;
+  border: 3px solid black;
+}
+.options-container button {
+  padding: 6px 10px;
+  color: white;
+  height: max-content;
+  font-size: 17px;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 5px;
+  background-color: rgb(35, 89, 190);
+}
+.options-bottom > div {
+  display: flex;
+  height: 10vw;
+  justify-content: space-between;
+  align-items: center;
+}
