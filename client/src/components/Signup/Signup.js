@@ -95,7 +95,7 @@ export default function Signup() {
                     <div className="signup-input">
                         <input type="text" placeholder='username' name='username' ref={username} />
                         {tog && temp.map((x, i) =>
-                            <input key={i} type="file" id={"file" + i} placeholder="img" multiple={false} name={"file" + i} onChange={(e) => setImages({ ...images, ["img" + i]: e.target.files[0] })} required />
+                            <input key={i} type="file" id={"file" + i} accept="image/jpeg,image/jpg,image/jfif,image/png" placeholder="img" multiple={false} name={"file" + i} onChange={(e) => setImages({ ...images, ["img" + i]: e.target.files[0] })} required />
                         )}
                         <input type="submit" value='SingUp' />
                         <p>Already an User</p><Link to="/login">Click here to login</Link>
