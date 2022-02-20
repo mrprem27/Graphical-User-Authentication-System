@@ -38,7 +38,7 @@ export default function Options({ selectedImg, options, setSelectedImg, optionsS
     return (
         <div className='options-container'>
             <div className="options-top">
-                <h2>Select Images that you have uploaded/choosed during Registration</h2>
+                <h2>{signup == true ? 'Select 5 Images that you can remember':'Select Images that you have uploaded/choosed during Registration'}</h2>
                 {signup == true && <button onClick={cancelCI}>Cancel</button>}
                 <div>
                     {options.map((f, i) =>
