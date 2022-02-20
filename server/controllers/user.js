@@ -2,7 +2,6 @@ const User = require('../models/user');
 const Site = require('../models/site');
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
 const dotenv = require('dotenv').config();
 const SECRET_KEY = process.env.SECRET_KEY;
 // const { pool } = require('../uploads/_pool');
